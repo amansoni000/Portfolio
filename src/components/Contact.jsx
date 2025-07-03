@@ -11,7 +11,7 @@ function Contact() {
 
         <div className="flex justify-center gap-6 text-2xl">
           <a
-            href="https://github.com/amanswarnkar"
+            href="https://github.com/amansoni000"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition-colors"
@@ -19,7 +19,7 @@ function Contact() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/amanswarnkar"
+            href="https://www.linkedin.com/in/aman-swarn/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-400 transition-colors"

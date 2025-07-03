@@ -1,47 +1,50 @@
 function Projects() {
     const projects = [
       {
-        title: "ZPL Label Generator",
+        title: "Restart Analyser — Spring Boot Library",
         description:
-          "A microservice to generate and print ZPL-based product labels asynchronously. Built using Spring Boot, RabbitMQ, Angular, and REST APIs.",
-        link: "https://github.com/your-github/zpl-label-generator",
+          "Plug-and-play library to detect and log root causes of microservice restarts. Captures thread dumps, heap usage, CPU, and GC stats with 100% JVM and container-level coverage.",
+        link: "https://github.com/amansoni000/Restart_Analyser",
       },
       {
-        title: "Service Restart Detector",
+        title: "PCB Defect Detection using OpenCV",
         description:
-          "Restart analysis library for Spring Boot services that logs memory, thread dumps, and GC stats. Integrates easily across WMS microservices.",
-        link: "https://github.com/your-github/restart-analyser",
+          "Implemented IEEE paper on automatic PCB defect detection. Performed image processing techniques like thresholding, filtering, and segmentation for defect classification.",
+        link: "https://github.com/amansoni000/PCB-Defect-Detection-Using-Image-Processing",
       },
       {
-        title: "ASN Processing Optimizer",
+        title: "Social Distancing Violation Alert System",
         description:
-          "Optimized GRN flow by rewriting core logic in ASN services, reducing latency by 60%. Used MongoDB, Spring Events, and Kafka.",
-        link: "https://github.com/your-github/asn-optimizer",
+          "Built a YOLOv3-based real-time video analytics system to detect social distancing violations. Transformed the video stream to bird's-eye view using OpenCV, calculated Euclidean distances between detected people, and marked violations with red/green bounding boxes.",
+        link: "https://github.com/amansoni000/Social-Distancing-Violation-Alert-System",
       },
     ];
   
     return (
-      <section id="projects"
-       className="bg-gray-900 py-16 px-6"
-       >
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
+      <section
+        id="projects"
+        className="bg-gray-900 py-16 px-6"
+      >
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-white">
           Projects
         </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-6 rounded-xl shadow hover:shadow-lg transition-all duration-300"
+              className="bg-gray-800 p-6 rounded-2xl shadow hover:shadow-xl transition-all duration-300"
             >
-              <h3 className="text-xl font-semibold mb-2 text-blue-400">
+              <h3 className="text-2xl font-semibold mb-3 text-blue-400">
                 {project.title}
               </h3>
-              <p className="text-gray-300 text-sm mb-4">{project.description}</p>
+              <p className="text-gray-300 text-base mb-6 leading-relaxed">
+                {project.description}
+              </p>
               <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-500 hover:underline"
+                className="inline-block text-base text-blue-500 hover:text-blue-400 font-medium transition-colors"
               >
                 View Code →
               </a>
