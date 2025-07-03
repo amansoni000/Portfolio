@@ -53,10 +53,12 @@ my-portfolio/
 │   └── resume.pdf
 ├── src/
 │   ├── components/
+│   │   ├── AboutMe.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Experience.jsx
 │   │   ├── Hero.jsx
 │   │   ├── Navbar.jsx
 │   │   ├── Projects.jsx
-│   │   └── Footer.jsx
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
